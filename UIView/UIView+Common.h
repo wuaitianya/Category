@@ -57,6 +57,8 @@
 //整个view转成图片
 - (UIImage*) convertToImage;
 
+
+/* 如果项目中使用了Masonry ，则隐藏该部分内容，否则与 Masonry 里面的 frame扩展重复，可能导致引用错误  */
 #pragma mark - 设置frame
 - (CGFloat)left;
 - (CGFloat)right;
@@ -82,4 +84,5 @@
 - (void)setOrigin:(CGPoint)point;
 - (void)setAddTop:(CGFloat)top;
 - (void)setAddLeft:(CGFloat)left;
+/* 如果项目中使用了Masonry ，则隐藏该部分内容，否则与 Masonry 里面的 frame扩展重复，可能导致引用错误  */
 @end
