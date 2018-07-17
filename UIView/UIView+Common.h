@@ -57,7 +57,7 @@
 //整个view转成图片
 - (UIImage*) convertToImage;
 
-#pragma mark - 设施frame
+#pragma mark - 设置frame
 - (CGFloat)left;
 - (CGFloat)right;
 - (CGSize)size;

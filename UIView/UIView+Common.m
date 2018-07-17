@@ -183,7 +183,7 @@
     UIGraphicsEndImageContext();
     return image;
 }
-#pragma mark - 设施frame
+#pragma mark - 设置frame
 - (CGFloat)left
 {
     return self.frame.origin.x;
