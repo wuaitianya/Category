@@ -29,11 +29,15 @@ typedef NS_ENUM(NSUInteger, MKButtonEdgeInsetsStyle) {
  withTitleColor:[UIColor blueColor]
  withSuperView:self.view];
  */
-//创建一个完整的 包含 title 和 image
+/**创建一个完整的 包含 title 和 image
+ */
 +(instancetype)initializeButtonWithFrame:(CGRect)frame withTarget:(id)target withSelector:(SEL)selector withImage:(UIImage*)image withTitle:(NSString*)title withFontSize:(CGFloat)fontSize withTitleColor:(UIColor*)titleColor withSuperView:(UIView*)superView;
-//创建一个只有title的
+/**创建一个只有title的
+*/
 +(instancetype)initializeButtonWithFrame:(CGRect)frame withTarget:(id)target withSelector:(SEL)selector withTitle:(NSString*)title withFontSize:(CGFloat)fontSize withTitleColor:(UIColor*)titleColor withSuperView:(UIView*)superView;
-//创建一个只有image的
+/**
+创建一个只有image的
+ */
 +(instancetype)initializeButtonWithFrame:(CGRect)frame withTarget:(id)target withSelector:(SEL)selector withImage:(UIImage*)image withSuperView:(UIView*)superView;
 
 
