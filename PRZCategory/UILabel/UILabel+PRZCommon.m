@@ -53,4 +53,8 @@
     NSMutableAttributedString *attrStr = self.attributedText? self.attributedText.mutableCopy: [[NSMutableAttributedString alloc] initWithString:self.text];
     [attrStr addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:range];
 }
++ (CGSize)getFitSizeWithString:(NSString*)str withConstantSize:(CGSize)size withFont:(CGFloat)font{
+    CGRect rect = [str boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:font]} context:nil];
+    return rect.size;
+}
 @end

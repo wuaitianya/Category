@@ -30,4 +30,10 @@
 - (void)fontTextWithFont:(UIFont *)font range:(NSRange)range;
 //富文本行间距
 - (void)LineSpacingWithSpace:(CGFloat)space range:(NSRange)range;
+/**
+ 自动获取自适应的的宽或者高
+ 如需获取单行的宽 size传入 CGSizeMake(MAXFLOAT, <#CGFloat height#>)
+ 如需获取多行的高 size传入 CGSizeMake(<#CGFloat width#>, MAXFLOAT)
+ */
++ (CGSize)getFitSizeWithString:(NSString*)str withConstantSize:(CGSize)size withFont:(CGFloat)font;
 @end
